@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/Question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rotationY="-360"
+                tools:text="السؤال سيظهر هنا"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+           <RadioGroup
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentBottom="true"
+               android:gravity="bottom"
+               tools:ignore="RtlHardcoded">
+
+               <TextView
+                   android:id="@+id/noAnswer"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="لا"
+                   android:layout_marginTop="3dp"
+                   tools:ignore="HardcodedText"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:textColor="@android:color/black"
+                   android:textStyle="bold"
+                   android:textSize="20sp" />
+
+               <RadioButton
+                   android:id="@+id/noCheck"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginEnd="30dp"/>
+
+               <TextView
+                   android:id="@+id/yesAnswer"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="نعم"
+                   android:textColor="@android:color/black"
+                   android:textSize="20sp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:layout_marginTop="3dp"
+                   android:textStyle="bold"
+                   tools:ignore="HardcodedText" />
+
+               <RadioButton
+                   android:id="@+id/yesCheck"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginEnd="10dp"/>
+
+           </RadioGroup>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
